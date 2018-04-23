@@ -1,6 +1,6 @@
 <% if @user == current_user %>
 <h2><%= @user.username%></h2>
-<br>
+<br></br>
 <% Tweet.all.each do |tweet| %>
   <%= tweet.content %>
   <% end %>
